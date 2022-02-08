@@ -1,12 +1,4 @@
-:root {
-  --background: #1F2229;
-  --background2: #2E303C;
-  --background-button: #373945;
-  --background-button2: #4B4D59;
-  --yellow: #FAE800;
-  --gray: #BEC2C6;
-  --white: #FBFBFB;
-}
+@import 'colors';
 
 * {
   margin: 0;
@@ -16,8 +8,8 @@
 
 body {
   font: 16px "Poppins", Arial, sans-serif;
-  color: #FBFBFB;
-  background: var(--background);
+  color: $white;
+  background: url('../img/background.jpg') center/120% no-repeat fixed;
 }
 
 input, textarea {
@@ -26,4 +18,31 @@ input, textarea {
 
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 52.5rem;
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
 }

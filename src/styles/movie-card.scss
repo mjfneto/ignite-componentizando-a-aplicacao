@@ -1,9 +1,13 @@
+@import 'colors';
+
 .movie-card {
   position: relative;
+  border-radius: 0.25rem;
 
   img {
     width: 14.31rem;
     height: 21.25rem;
+    border-radius: inherit;
   }
 
   > div {
@@ -12,11 +16,18 @@
     bottom: 0;
     right: 0;
     left: 0;
+    transition: background 0.2s;
 
     display: flex;
     justify-content: center;
+    
+    border-radius: inherit;
 
     background: rgba(31, 34, 41, 0.5);
+
+    &:hover {
+      background: rgba(31, 34, 41, 0.2);
+    }
 
     .movie-info {
       max-width: 12.31rem;
@@ -28,7 +39,7 @@
       > span {
         font-weight: 600;
         font-size: 1rem;
-        color: #fbfbfb;
+        color: $white;
   
         margin-top: auto;
         margin-bottom: 0.5rem;
@@ -46,10 +57,10 @@
           align-items: center;
   
           font-weight: 600;
-          color: var(--gray);
+          color: $gray;
   
           svg {
-            color: #FAE800;
+            color: $yellow;
             margin-right: 0.5rem;
           }
         }

@@ -1,0 +1,20 @@
+@import 'colors';
+
+.index-page-container {
+    flex: 1;
+    position: relative;
+
+    .index-page-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-right: -50%;
+        text-align: center;
+
+        span,
+        p {
+            background: $background; 
+        }
+    }
+}

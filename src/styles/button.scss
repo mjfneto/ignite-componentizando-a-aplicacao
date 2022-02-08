@@ -1,35 +1,44 @@
-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@import 'colors';
 
-  max-width: 20rem;
-  width: 100%;
-
-  border: 0;
-  background: var(--background-button);
-  padding: 1.1875rem 2rem;
-  border-radius: 0.25rem;
-
-  font-size: 1.125rem;
-  color: var(--white);
-
-  &:hover {
-    background: var(--background-button2);
+.category-link {
+  &:first-child button {
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
   }
 
-  transition: background 200ms;
-
-  & + button {
-    margin-top: 1rem;
+  &:last-child button {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
   }
 
-  &:first-child {
-    margin-top: 0;
-  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  &.selected {
-    background: var(--background-button2);
-    color: var(--yellow);
+    max-width: 20rem;
+    width: 100%;
+
+    border: 0;
+    background: $background-button;
+    padding: 1.1875rem 2rem;
+
+    font-size: 1.125rem;
+    color: $white;
+
+    &:hover {
+      background: $background-button2;
+    }
+
+    transition: background 200ms;
+
+    & + button {
+      margin-top: 1rem;
+    }
+
+    &.selected {
+      background: $background-button2;
+      color: $yellow;
+    }
   }
 }

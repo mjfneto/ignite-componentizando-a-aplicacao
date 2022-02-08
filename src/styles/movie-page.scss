@@ -1,0 +1,36 @@
+@import 'colors';
+
+.breadcrumb {
+    padding: 2rem 2rem 2rem 0;
+    margin-bottom: 3.75rem;
+
+    * {
+        vertical-align: middle;
+    }
+
+    a {
+        margin-top: 2rem;
+
+        font-size: 2.25rem;
+        font-weight: 600;
+        color: $gray;
+
+        &:hover {
+            color: darken($yellow, 30%);
+        }
+    }
+}
+
+.movie-wrapper {
+    align-items: flex-start;
+
+    .info {
+        flex: 1;
+        padding: 0 0.7rem 0.7rem 0.7rem;
+    }
+
+    strong {
+        color: $yellow;
+    }
+    
+}

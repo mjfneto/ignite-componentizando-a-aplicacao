@@ -1,9 +1,4 @@
-.container {
-  max-width: 52.5rem;
-  width: 100%;
-
-  margin: 0 auto;
-}
+@import 'colors';
 
 header {
   span.category {
@@ -12,17 +7,17 @@ header {
 
     font-size: 2.25rem;
     font-weight: 600;
-    color: var(--gray);
+    color: $gray;
   }
 
   span {
-    color: var(--white);
+    color: $white;
   }
 }
 
 main {
   width: 100%;
-  margin-top: 5.625rem;
+  margin: 5.625rem auto;
 
   .movies-list {
     display: grid;
